@@ -276,7 +276,7 @@
 			    src.b = _ColorArray[index].z;
 		        src.a = _ColorArray[index].w;
 
-			    src.rgb += fadeShading *shading(N, V, L)*_Intensity;
+			    src.rgb += fadeShading *shading(N, V, L)*_Intensity+0.1*src.rgb;
 
 		        //src.a *= 0.8;
 
